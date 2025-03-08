@@ -1,15 +1,17 @@
-# Java-related
+# Ignore NetBeans project files
+nbproject/
+nbproject/private/
+
+# Ignore build artifacts
+build/
+dist/
+
+# Ignore compiled Java classes and JARs
 *.class
 *.jar
+*.war
+*.ear
 
-# IDE-related (Eclipse, IntelliJ)
-*.iml
-.idea/
-*.vscode/
-target/
-bin/
-out/
-
-# System-specific
-*.DS_Store
-Thumbs.db
+# Ignore NetBeans-specific files
+nbactions.xml
+nb-configuration.xml
