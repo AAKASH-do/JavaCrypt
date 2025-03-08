@@ -1,0 +1,15 @@
+# Java-related
+*.class
+*.jar
+
+# IDE-related (Eclipse, IntelliJ)
+*.iml
+.idea/
+*.vscode/
+target/
+bin/
+out/
+
+# System-specific
+*.DS_Store
+Thumbs.db
