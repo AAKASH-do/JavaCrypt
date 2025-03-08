@@ -55,16 +55,12 @@ Run the following SQL commands to create the required tables:
 ```sql
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
-    username VARCHAR(255) UNIQUE NOT NULL,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
     password_hash TEXT NOT NULL
 );
 
-CREATE TABLE transactions (
-    id SERIAL PRIMARY KEY,
-    user_id INT REFERENCES users(id),
-    encrypted_data TEXT NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
 ```
 
 #### 4. Run the Application
